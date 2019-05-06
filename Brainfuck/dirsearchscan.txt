@@ -1,0 +1,25 @@
+xsisec@d0m:~/Documents/Programs/python/dirsearch$ ./dirsearch.py -t 500 -u https://sup3rs3cr3t.brainfuck.htb/ -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -e .php
+
+ _|. _ _  _  _  _ _|_    v0.3.8
+(_||| _) (/_(_|| (_| )
+
+Extensions: .php | Threads: 500 | Wordlist size: 220521
+
+Error Log: /home/xsisec/Documents/Programs/python/dirsearch/logs/errors-19-04-25_11-35-50.log
+
+Target: https://sup3rs3cr3t.brainfuck.htb/
+
+[11:35:51] Starting: 
+[11:35:52] 200 -    7KB - /
+[11:35:52] 500 -    4KB - /register
+[11:35:52] 301 -  194B  - /uploads  ->  https://sup3rs3cr3t.brainfuck.htb/uploads/
+[11:35:53] 301 -  194B  - /scripts  ->  https://sup3rs3cr3t.brainfuck.htb/scripts/
+[11:35:54] 301 -  194B  - /assets  ->  https://sup3rs3cr3t.brainfuck.htb/assets/
+[11:35:54] 301 -  194B  - /storage  ->  https://sup3rs3cr3t.brainfuck.htb/storage/
+[11:35:57] 301 -  194B  - /vendor  ->  https://sup3rs3cr3t.brainfuck.htb/vendor/
+[11:36:22] 200 -    1KB - /LICENSE
+[11:40:37] 500 -    0B  - /Transport
+[11:40:37] 500 -    0B  - /reportcenter
+
+Task Completed
+

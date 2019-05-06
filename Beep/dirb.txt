@@ -1,0 +1,33 @@
+04:51:16] Starting: 
+[04:51:22] 302 -  277B  - /php  ->  https://beep.htb/php
+[04:51:28] 403 -  286B  - /.ht_wsr.txt
+[04:51:28] 403 -  279B  - /.hta
+[04:51:28] 403 -  288B  - /.htaccess-dev
+[04:51:28] 403 -  290B  - /.htaccess-local
+[04:51:28] 403 -  290B  - /.htaccess-marco
+[04:51:28] 403 -  289B  - /.htaccess.bak1
+[04:51:28] 403 -  288B  - /.htaccess.BAK
+[04:51:28] 403 -  288B  - /.htaccess.old
+[04:51:28] 403 -  289B  - /.htaccess.orig
+[04:51:28] 403 -  291B  - /.htaccess.sample
+[04:51:28] 403 -  289B  - /.htaccess.save
+[04:51:28] 403 -  288B  - /.htaccess.txt
+[04:51:28] 403 -  289B  - /.htaccess_orig
+[04:51:28] 403 -  290B  - /.htaccess_extra
+[04:51:28] 403 -  287B  - /.htaccess_sc
+[04:51:28] 403 -  287B  - /.htaccessBAK
+[04:51:28] 403 -  287B  - /.htaccessOLD
+[04:51:28] 403 -  288B  - /.htaccessOLD2
+[04:51:28] 403 -  285B  - /.htaccess~
+[04:51:28] 403 -  283B  - /.htgroup
+[04:51:29] 403 -  288B  - /.htpasswd-old
+[04:51:29] 403 -  289B  - /.htpasswd_test
+[04:51:29] 403 -  285B  - /.htpasswds
+[04:51:29] 403 -  283B  - /.htusers
+[04:51:53] 302 -  282B  - /adminphp  ->  https://beep.htb/adminphp
+[04:51:55] 403 -  290B  - /admin/.htaccess
+[04:52:35] 403 -  283B  - /cgi-bin/
+[04:52:59] 403 -  281B  - /error/
+[04:53:30] 200 -  548B  - /mailman/listinfo
+[04:53:37] 302 -  284B  - /myadminphp  ->  https://beep.htb/myadminphp
+

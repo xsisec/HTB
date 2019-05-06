@@ -1,0 +1,34 @@
+ dirb https://brainfuck.htb -X .php
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Tue Apr 23 06:40:03 2019
+URL_BASE: https://brainfuck.htb/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+EXTENSIONS_LIST: (.php) | (.php) [NUM = 1]
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: https://brainfuck.htb/ ----
++ https://brainfuck.htb/index.php (CODE:301|SIZE:0)                                                                
++ https://brainfuck.htb/wp-blog-header.php (CODE:200|SIZE:0)                                                       
++ https://brainfuck.htb/wp-config.php (CODE:200|SIZE:0)                                                            
++ https://brainfuck.htb/wp-cron.php (CODE:200|SIZE:0)                                                              
++ https://brainfuck.htb/wp-links-opml.php (CODE:200|SIZE:224)                                                      
++ https://brainfuck.htb/wp-load.php (CODE:200|SIZE:0)                                                              
++ https://brainfuck.htb/wp-login.php (CODE:200|SIZE:2244)                                                          
++ https://brainfuck.htb/wp-mail.php (CODE:403|SIZE:3444)                                                           
++ https://brainfuck.htb/wp-settings.php (CODE:500|SIZE:0)                                                          
++ https://brainfuck.htb/wp-signup.php (CODE:302|SIZE:0)                                                            
++ https://brainfuck.htb/wp-trackback.php (CODE:200|SIZE:135)                                                       
++ https://brainfuck.htb/xmlrpc.php (CODE:405|SIZE:42)                                                              
+                                                                                                                   
+-----------------
+END_TIME: Tue Apr 23 06:44:16 2019
+DOWNLOADED: 4612 - FOUND: 12
+

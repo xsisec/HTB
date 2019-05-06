@@ -1,0 +1,59 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-19 04:17 EDT
+Nmap scan report for 10.10.10.7
+Host is up (0.15s latency).
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+110/tcp   open  pop3
+111/tcp   open  rpcbind
+143/tcp   open  imap
+443/tcp   open  https
+993/tcp   open  imaps
+995/tcp   open  pop3s
+3306/tcp  open  mysql
+4445/tcp  open  upnotifyp
+10000/tcp open  snet-sensor-mgmt
+
+Nmap done: 1 IP address (1 host up) scanned in 38.23 seconds
+
+
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-19 04:35 EDT
+Warning: 10.10.10.7 giving up on port because retransmission cap hit (1).
+Nmap scan report for beep.htb (10.10.10.7)
+Host is up (0.14s latency).
+Not shown: 65507 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+25/tcp    open     smtp
+80/tcp    open     http
+110/tcp   open     pop3
+111/tcp   open     rpcbind
+143/tcp   open     imap
+443/tcp   open     https
+745/tcp   open     unknown
+993/tcp   open     imaps
+995/tcp   open     pop3s
+3306/tcp  open     mysql
+4190/tcp  open     sieve
+4445/tcp  open     upnotifyp
+4559/tcp  open     hylafax
+5038/tcp  open     unknown
+6496/tcp  filtered unknown
+9942/tcp  filtered unknown
+10000/tcp open     snet-sensor-mgmt
+19447/tcp filtered unknown
+20388/tcp filtered unknown
+25568/tcp filtered unknown
+40628/tcp filtered unknown
+47042/tcp filtered unknown
+51705/tcp filtered unknown
+52658/tcp filtered unknown
+53131/tcp filtered unknown
+54366/tcp filtered unknown
+62868/tcp filtered unknown
+
+
+
+
