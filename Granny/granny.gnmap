@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Wed May  1 05:14:42 2019 as: nmap -A -oA granny granny.htb
+Host: 10.10.10.15 (granny.htb)	Status: Up
+Host: 10.10.10.15 (granny.htb)	Ports: 80/open/tcp//http//Microsoft IIS httpd 6.0/	Ignored State: filtered (999)
+# Nmap done at Wed May  1 05:15:00 2019 -- 1 IP address (1 host up) scanned in 17.47 seconds

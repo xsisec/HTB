@@ -1,0 +1,19 @@
+[sudo] password for xsisec: 
+Starting Nmap 7.70 ( https://nmap.org ) at 2019-04-23 06:26 EDT
+Nmap scan report for brainfuck.htb (10.10.10.17)
+Host is up (0.061s latency).
+Not shown: 995 filtered ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.2p2 Ubuntu 4ubuntu2.1 (Ubuntu Linux; protocol 2.0)
+25/tcp  open  smtp     Postfix smtpd
+110/tcp open  pop3     Dovecot pop3d
+143/tcp open  imap     Dovecot imapd
+443/tcp open  ssl/http nginx 1.10.0 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (92%), Linux 3.12 (92%), Linux 3.13 (92%), Linux 3.13 or 4.2 (92%), Linux 3.16 (92%), Linux 3.16 - 4.6 (92%), Linux 3.2 - 4.9 (92%), Linux 3.8 - 3.11 (92%), Linux 4.2 (92%), Linux 4.4 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: Host:  brainfuck; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.76 seconds
+
