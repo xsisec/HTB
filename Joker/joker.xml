@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1557247630" profile_name="Intense scan, all TCP ports" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Tue May  7 12:47:10 2019" args="nmap -p 1-65535 -T4 -A -v 10.10.10.21"><scaninfo services="1-65535" protocol="tcp" numservices="65535" type="syn"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2019-05-07 12:47 EDT
+NSE: Loaded 148 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 12:47
+Completed NSE at 12:47, 0.00s elapsed
+Initiating NSE at 12:47
+Completed NSE at 12:47, 0.00s elapsed
+Initiating Ping Scan at 12:47
+Scanning 10.10.10.21 [4 ports]
+Completed Ping Scan at 12:47, 0.08s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 12:47
+Scanning joker.htb (10.10.10.21) [65535 ports]
+Discovered open port 22/tcp on 10.10.10.21
+SYN Stealth Scan Timing: About 12.23% done; ETC: 12:51 (0:03:43 remaining)
+Discovered open port 3128/tcp on 10.10.10.21
+SYN Stealth Scan Timing: About 40.73% done; ETC: 12:49 (0:01:29 remaining)
+Completed SYN Stealth Scan at 12:48, 103.83s elapsed (65535 total ports)
+Initiating Service scan at 12:48
+Scanning 2 services on joker.htb (10.10.10.21)
+Completed Service scan at 12:49, 11.31s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against joker.htb (10.10.10.21)
+Retrying OS detection (try #2) against joker.htb (10.10.10.21)
+Initiating Traceroute at 12:49
+Completed Traceroute at 12:49, 0.11s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 12:49
+Completed Parallel DNS resolution of 2 hosts. at 12:49, 0.00s elapsed
+NSE: Script scanning 10.10.10.21.
+Initiating NSE at 12:49
+Completed NSE at 12:49, 2.99s elapsed
+Initiating NSE at 12:49
+Completed NSE at 12:49, 0.00s elapsed
+Nmap scan report for joker.htb (10.10.10.21)
+Host is up (0.083s latency).
+Not shown: 65533 filtered ports
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 7.3p1 Ubuntu 1ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 88:24:e3:57:10:9f:1b:17:3d:7a:f3:26:3d:b6:33:4e (RSA)
+|   256 76:b6:f6:08:00:bd:68:ce:97:cb:08:e7:77:69:3d:8a (ECDSA)
+|_  256 dc:91:e4:8d:d0:16:ce:cf:3d:91:82:09:23:a7:dc:86 (ED25519)
+3128/tcp open  http-proxy Squid http proxy 3.5.12
+|_http-server-header: squid/3.5.12
+|_http-title: ERROR: The requested URL could not be retrieved
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (94%), Linux 3.12 (94%), Linux 3.13 (94%), Linux 3.13 or 4.2 (94%), Linux 3.16 (94%), Linux 3.16 - 4.6 (94%), Linux 3.18 (94%), Linux 3.2 - 4.9 (94%), Linux 3.8 - 3.11 (94%), Linux 4.2 (94%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 1.591 days (since Sun May  5 22:38:42 2019)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT       ADDRESS
+1   105.90 ms 10.10.16.1
+2   70.64 ms  joker.htb (10.10.10.21)
+
+NSE: Script Post-scanning.
+Initiating NSE at 12:49
+Completed NSE at 12:49, 0.00s elapsed
+Initiating NSE at 12:49
+Completed NSE at 12:49, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 123.74 seconds
+           Raw packets sent: 131224 (5.776MB) | Rcvd: 4547 (670.830KB)
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="10.10.10.21"></address><hostnames><hostname type="PTR" name="joker.htb"></hostname></hostnames><ports><extraports count="65533" state="filtered"></extraports><port protocol="tcp" portid="22"><state reason="syn-ack" state="open" reason_ttl="63"></state><service product="OpenSSH" name="ssh" extrainfo="Ubuntu Linux; protocol 2.0" version="7.3p1 Ubuntu 1ubuntu0.1" conf="10" method="probed"></service></port><port protocol="tcp" portid="3128"><state reason="syn-ack" state="open" reason_ttl="63"></state><service product="Squid http proxy" version="3.5.12" method="probed" conf="10" name="http-proxy"></service></port></ports><os><portused state="open" portid="22" proto="tcp"></portused><portused state="closed" portid="33690" proto="udp"></portused><osmatch line="63230" name="Linux 3.10 - 4.11" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="94"></osclass></osmatch><osmatch line="63436" name="Linux 3.12" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="94"></osclass></osmatch><osmatch line="63553" name="Linux 3.13" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="94"></osclass></osmatch><osmatch line="63776" name="Linux 3.13 or 4.2" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="94"></osclass></osmatch><osmatch line="63944" name="Linux 3.16" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="94"></osclass></osmatch><osmatch line="64164" name="Linux 3.16 - 4.6" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="94"></osclass></osmatch><osmatch line="64238" name="Linux 3.18" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="94"></osclass></osmatch><osmatch line="65105" name="Linux 3.2 - 4.9" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="94"></osclass></osmatch><osmatch line="66079" name="Linux 3.8 - 3.11" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="3.X" accuracy="94"></osclass></osmatch><osmatch line="67075" name="Linux 4.2" accuracy="94"><osclass type="general purpose" osfamily="Linux" vendor="Linux" osgen="4.X" accuracy="94"></osclass></osmatch></os><uptime lastboot="Sun May  5 22:38:42 2019" seconds="137432"></uptime><tcpsequence index="260" values="8A984E2D,684D9C7F,1638DE6D,320FFC54,C10C4F70,8FE46859" difficulty="Good luck!"></tcpsequence><ipidsequence values="0,0,0,0,0,0" class="All zeros"></ipidsequence><tcptssequence values="234152B,2341545,2341557,234157C,234158E,23415B2" class="other"></tcptssequence><trace port="22" proto="tcp"><hop rtt="105.90" host="" ipaddr="10.10.16.1" ttl="1"></hop><hop rtt="70.64" host="joker.htb" ipaddr="10.10.10.21" ttl="2"></hop></trace></host><runstats><finished timestr="Tue May  7 12:49:14 2019" time="1557247754"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

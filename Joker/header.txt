@@ -1,0 +1,10 @@
+http://10.10.10.21:3128/robots
+HTTP/1.1 400 Bad Request Server: squid/3.5.12 
+Mime-Version: 1.0 
+Date: Tue, 07 May 2019 11:50:09 GMT 
+Content-Type: text/html;charset=utf-8 
+Content-Length: 3515 X-Squid-Error: ERR_INVALID_URL 0 Vary: 
+Accept-Language 
+Content-Language: en X-Cache: MISS from joker 
+X-Cache-Lookup: NONE from joker:3128 Via: 1.1 joker (squid/3.5.12)
+Connection: close

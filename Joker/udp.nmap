@@ -1,0 +1,25 @@
+# Nmap 7.70 scan initiated Wed May  8 03:56:31 2019 as: nmap -sU -oA udp 10.10.10.21
+Nmap scan report for joker.htb (10.10.10.21)
+Host is up (0.036s latency).
+Not shown: 982 closed ports
+PORT      STATE         SERVICE
+69/udp    open|filtered tftp
+826/udp   open|filtered unknown
+1047/udp  open|filtered neod1
+5355/udp  open|filtered llmnr
+17077/udp open|filtered unknown
+19956/udp open|filtered unknown
+20262/udp open|filtered unknown
+20919/udp open|filtered unknown
+21186/udp open|filtered unknown
+21898/udp open|filtered unknown
+22045/udp open|filtered unknown
+24644/udp open|filtered unknown
+40622/udp open|filtered unknown
+42557/udp open|filtered unknown
+56141/udp open|filtered unknown
+57409/udp open|filtered unknown
+58631/udp open|filtered unknown
+65024/udp open|filtered unknown
+
+# Nmap done at Wed May  8 04:14:13 2019 -- 1 IP address (1 host up) scanned in 1062.47 seconds

