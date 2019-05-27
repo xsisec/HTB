@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Fri May 24 09:59:52 2019 as: nmap -A -p- -oA ports 10.10.10.46 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oA ports 10.10.10.46" start="1558706392" startstr="Fri May 24 09:59:52 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1558706392" endtime="1558706528"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.46" addrtype="ipv4"/>
+<hostnames>
+<hostname name="apocalyst.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="conn-refused" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 fd:ab:0f:c9:22:d5:f4:8f:7a:0a:29:11:b4:04:da:c9 (RSA)&#xa;  256 76:92:39:0a:57:bd:f0:03:26:78:c7:db:1a:66:a5:bc (ECDSA)&#xa;  256 12:12:cf:f1:7f:be:43:1f:d5:e6:6d:90:84:25:c8:bd (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC31v5ON0qrpNu/jcyTlljgNneZ/fMZ7CGOyDjCMa1Qc6YtMbYdd9H3o8u3nbiakd18yS/NCI3zXhO/q+2K644h+ex5EBruAkxig0cNgu5kBJznU3V1+cOQNuEx4Vk81/7d2k2kGnYwfXsXWtyz1EKC2FsbQiz4bgov/JteUcTtFRdBypCk1Ereo+zOFj2oydthRPgjW1w0mkfXEgknEbnFcb3Ey5QI60FC6gy/oWy3UyKNn3qkNq5XsMxVj4tbA4wP4yHIBoGUOLphSKpSDX8K+PoEgZ3Auo3zYjUw8rMPb3LSeXs5PNLj97vishrGzAVBdgHk7pzKyv2UDgvrVq0/</elem>
+<elem key="fingerprint">fdab0fc922d5f48f7a0a2911b404dac9</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM93PeqWOJlPlf9AK3ytgwWlOpQUC/hBoT6wvalkI2otqamAa/FboxVa7hSZdIivlnyTViO8mMGSRXergrTXar4=</elem>
+<elem key="fingerprint">7692390a57bdf0032678c7db1a66a5bc</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPuP4PNCgZu2qrKNZLu+PaCCyf5Eqq5no6CgJJPsST9h</elem>
+<elem key="fingerprint">1212cff17fbe431fd5e66d908425c8bd</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" tunnel="ssl" method="table" conf="3"/><script id="http-title" output="Did not follow redirect to http://apocalyst.htb/"><elem key="redirect_url">http://apocalyst.htb/</elem>
+</script></port>
+</ports>
+<times srtt="36839" rttvar="417" to="100000"/>
+</host>
+<runstats><finished time="1558706528" timestr="Fri May 24 10:02:08 2019" elapsed="136.08" summary="Nmap done at Fri May 24 10:02:08 2019; 1 IP address (1 host up) scanned in 136.08 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

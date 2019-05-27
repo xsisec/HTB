@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May 23 10:44:51 2019 as: nmap -sC -sV -p- -oA /home/xsisec/Desktop/HTB/Blue/ports 10.10.10.40 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA /home/xsisec/Desktop/HTB/Blue/ports 10.10.10.40" start="1558622691" startstr="Thu May 23 10:44:51 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1558622691" endtime="1558622824"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.40" addrtype="ipv4"/>
+<hostnames>
+<hostname name="blue.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65526">
+<extrareasons reason="resets" count="65526"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows 7 Professional 7601 Service Pack 1 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="HARIS-PC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -22m07s, deviation: 34m37s, median: -2m08s"><elem key="stddev">2077</elem>
+<elem key="median">-128</elem>
+<elem key="mean">-1327</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_7::sp1:professional&#xa;  Computer name: haris-PC&#xa;  NetBIOS computer name: HARIS-PC\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2019-05-23T15:44:49+01:00&#xa;"><elem key="os">Windows 7 Professional 7601 Service Pack 1</elem>
+<elem key="lanmanager">Windows 7 Professional 6.1</elem>
+<elem key="server">HARIS-PC\x00</elem>
+<elem key="date">2019-05-23T15:44:49+01:00</elem>
+<elem key="fqdn">haris-PC</elem>
+<elem key="domain_dns">haris-PC</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_7::sp1:professional</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2019-05-23 10:44:51&#xa;  start_date: 2019-05-22 02:38:50"><elem key="date">2019-05-23 10:44:51</elem>
+<elem key="start_date">2019-05-22 02:38:50</elem>
+</script></hostscript><times srtt="38847" rttvar="1071" to="100000"/>
+</host>
+<runstats><finished time="1558622824" timestr="Thu May 23 10:47:04 2019" elapsed="133.21" summary="Nmap done at Thu May 23 10:47:04 2019; 1 IP address (1 host up) scanned in 133.21 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

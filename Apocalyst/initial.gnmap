@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Fri May 24 09:58:50 2019 as: nmap -A -sC -sV -oA initial 10.10.10.46
+Host: 10.10.10.46 (apocalyst.htb)	Status: Up
+Host: 10.10.10.46 (apocalyst.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//ssl|http?///	Ignored State: closed (998)
+# Nmap done at Fri May 24 10:00:47 2019 -- 1 IP address (1 host up) scanned in 117.45 seconds

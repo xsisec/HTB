@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sun May 19 08:18:07 2019 as: nmap -A -oA initial 10.10.10.11
+Host: 10.10.10.11 (artic.htb)	Status: Up
+Host: 10.10.10.11 (artic.htb)	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 8500/open/tcp//fmtp?///, 49154/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: filtered (997)	Seq Index: 263	IP ID Seq: Incremental
+# Nmap done at Sun May 19 08:20:29 2019 -- 1 IP address (1 host up) scanned in 141.33 seconds

@@ -1,0 +1,20 @@
+# Nmap 7.70 scan initiated Mon May 20 10:32:54 2019 as: nmap -A -oA initial 10.10.10.14
+Nmap scan report for grandpa.htb (10.10.10.14)
+Host is up (0.046s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 6.0
+| http-methods: 
+|_  Potentially risky methods: TRACE COPY PROPFIND SEARCH LOCK UNLOCK DELETE PUT MOVE MKCOL PROPPATCH
+|_http-server-header: Microsoft-IIS/6.0
+|_http-title: Under Construction
+| http-webdav-scan: 
+|   WebDAV type: Unkown
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|   Server Date: Mon, 20 May 2019 14:31:00 GMT
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, COPY, PROPFIND, SEARCH, LOCK, UNLOCK
+|_  Server Type: Microsoft-IIS/6.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May 20 10:33:09 2019 -- 1 IP address (1 host up) scanned in 15.18 seconds

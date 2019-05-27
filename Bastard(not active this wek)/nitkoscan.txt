@@ -1,0 +1,18 @@
+nikto -h bastard.htb
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.10.9
++ Target Hostname:    bastard.htb
++ Target Port:        80
++ Start Time:         2019-05-13 06:21:53 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Microsoft-IIS/7.5
++ Retrieved x-powered-by header: ARRAY(0x562a2f4c7208)
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ Uncommon header 'x-generator' found, with contents: Drupal 7 (http://drupal.org)
++ ERROR: Error limit (20) reached for host, giving up. Last error: opening stream: can't connect (timeout): Operation now in progress
++ Scan terminated:  20 error(s) and 3 item(s) reported on remote host
++ End Time:           2019-05-13 06:28:53 (GMT-4) (420 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+

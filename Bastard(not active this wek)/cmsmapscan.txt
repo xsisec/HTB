@@ -1,0 +1,49 @@
+xsisec@d0m:~/Documents/Programs/python/CMSmap-master$ ./cmsmap.py http://10.10.10.9
+[-] Date & Time: 13/05/2019 11:34:22
+[I] Threads: 5
+[-] Target: http://10.10.10.9 (10.10.10.9)
+[M] Website Not in HTTPS: http://10.10.10.9
+[I] Server: Microsoft-IIS/7.5
+[I] X-Powered-By: PHP/5.3.28
+[L] X-Generator: Drupal 7 (http://drupal.org)
+[L] X-Frame-Options: Not Enforced
+[I] Strict-Transport-Security: Not Enforced
+[I] X-Content-Security-Policy: Not Enforced
+[L] Robots.txt Found: http://10.10.10.9/robots.txt
+[I] CMS Detection: Drupal
+[I] Drupal Version: 7.54
+[M]  EDB-ID: 46510 "Drupal < 8.5.11 / < 8.6.10 - RESTful Web Services unserialize() Remote Command Execution (Metasploit)"
+[M]  EDB-ID: 44448 "Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution (PoC)"
+[M]  EDB-ID: 44449 "Drupal < 7.58 / < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution"
+[M]  EDB-ID: 44482 "Drupal < 8.3.9 / < 8.4.6 / < 8.5.1 - 'Drupalgeddon2' Remote Code Execution (Metasploit)"
+[M]  EDB-ID: 44542 "Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code Execution (PoC)"
+[M]  EDB-ID: 44557 "Drupal < 7.58 - 'Drupalgeddon3' (Authenticated) Remote Code (Metasploit)"
+[I] Drupal Theme: bartik
+[-] Enumerating Drupal Usernames via "Views" Module...
+[-] Enumerating Drupal Usernames via "/user/"...
+[I] Autocomplete Off Not Found: http://10.10.10.9/user/
+[-] Drupal Default Files: 
+[-] Drupal is likely to have a large number of default files
+[-] Would you like to list them all?
+[y/N]: y
+[I] http://10.10.10.9/profiles/README.txt
+[I] http://10.10.10.9/robots.txt
+[I] http://10.10.10.9/sites/README.txt
+[I] http://10.10.10.9/themes/README.txt
+[I] http://10.10.10.9/README.txt
+[I] http://10.10.10.9/INSTALL.txt
+[I] http://10.10.10.9/modules/README.txt
+[I] Forgotten Password Allows Username Enumeration: http://10.10.10.9/user/password
+[-] Search Drupal Modules ...
+[I] comment
+[I] content
+[I] ctools
+[I] field
+[I] node
+[I] search
+[I] system
+[I] user
+[I] Checking for Directory Listing Enabled ...
+[-] Date & Time: 13/05/2019 11:46:02
+[-] Completed in: 0:11:40
+

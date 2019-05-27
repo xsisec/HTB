@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Sun May 19 08:22:30 2019 as: nmap -p- -oA ports 10.10.10.11 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA ports 10.10.10.11" start="1558268550" startstr="Sun May 19 08:22:30 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1558268550" endtime="1558268657"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.11" addrtype="ipv4"/>
+<hostnames>
+<hostname name="artic.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8500"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="fmtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="44921" rttvar="3738" to="100000"/>
+</host>
+<runstats><finished time="1558268657" timestr="Sun May 19 08:24:17 2019" elapsed="106.98" summary="Nmap done at Sun May 19 08:24:17 2019; 1 IP address (1 host up) scanned in 106.98 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

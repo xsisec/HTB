@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon May 20 10:32:54 2019 as: nmap -A -oA initial 10.10.10.14
+Host: 10.10.10.14 (grandpa.htb)	Status: Up
+Host: 10.10.10.14 (grandpa.htb)	Ports: 80/open/tcp//http//Microsoft IIS httpd 6.0/	Ignored State: filtered (999)
+# Nmap done at Mon May 20 10:33:09 2019 -- 1 IP address (1 host up) scanned in 15.18 seconds

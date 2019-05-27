@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Length: 1433
+Content-Type: text/html
+Content-Location: http://10.10.10.14/iisstart.htm
+Last-Modified: Fri, 21 Feb 2003 15:48:30 GMT
+Accept-Ranges: bytes
+ETag: "05b3daec0d9c21:2c3"
+Server: Microsoft-IIS/6.0
+MicrosoftOfficeWebServer: 5.0_Pub
+X-Powered-By: ASP.NET
+Date: Mon, 20 May 2019 14:38:31 GMT
+

@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon May 13 06:20:12 2019 as: nmap -sC -oA nmap 10.10.10.9
+Host: 10.10.10.9 ()	Status: Up
+Host: 10.10.10.9 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 49154/open/tcp//unknown///	Ignored State: filtered (997)
+# Nmap done at Mon May 13 06:20:30 2019 -- 1 IP address (1 host up) scanned in 17.87 seconds

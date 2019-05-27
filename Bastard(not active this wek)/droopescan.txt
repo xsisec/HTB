@@ -1,0 +1,37 @@
+xsisec@d0m:~/Documents/Programs/python/droopescan$ droopescan scan drupal -u http://10.10.10.9
+[+] Themes found:                                                               
+    seven http://10.10.10.9/themes/seven/
+    garland http://10.10.10.9/themes/garland/
+
+[+] Possible interesting urls found:
+    Default changelog file - http://10.10.10.9/CHANGELOG.txt
+    Default admin - http://10.10.10.9/user/login
+
+[+] Possible version(s):
+    7.54
+
+[+] Plugins found:
+    ctools http://10.10.10.9/sites/all/modules/ctools/
+        http://10.10.10.9/sites/all/modules/ctools/CHANGELOG.txt
+        http://10.10.10.9/sites/all/modules/ctools/changelog.txt
+        http://10.10.10.9/sites/all/modules/ctools/CHANGELOG.TXT
+        http://10.10.10.9/sites/all/modules/ctools/LICENSE.txt
+        http://10.10.10.9/sites/all/modules/ctools/API.txt
+    libraries http://10.10.10.9/sites/all/modules/libraries/
+        http://10.10.10.9/sites/all/modules/libraries/CHANGELOG.txt
+        http://10.10.10.9/sites/all/modules/libraries/changelog.txt
+        http://10.10.10.9/sites/all/modules/libraries/CHANGELOG.TXT
+        http://10.10.10.9/sites/all/modules/libraries/README.txt
+        http://10.10.10.9/sites/all/modules/libraries/readme.txt
+        http://10.10.10.9/sites/all/modules/libraries/README.TXT
+        http://10.10.10.9/sites/all/modules/libraries/LICENSE.txt
+    services http://10.10.10.9/sites/all/modules/services/
+        http://10.10.10.9/sites/all/modules/services/README.txt
+        http://10.10.10.9/sites/all/modules/services/readme.txt
+        http://10.10.10.9/sites/all/modules/services/README.TXT
+        http://10.10.10.9/sites/all/modules/services/LICENSE.txt
+    image http://10.10.10.9/modules/image/
+    profile http://10.10.10.9/modules/profile/
+    php http://10.10.10.9/modules/php/
+
+[+] Scan finished (0:45:05.307673 elapsed)
